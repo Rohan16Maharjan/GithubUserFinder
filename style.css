@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	min-height: 150vh;
+	color: white;
+	background-color: #151515;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.search {
+	width: 30%;
+	display: flex;
+	gap: 0.2rem;
+	margin-bottom: 1rem;
+}
+
+.search input {
+	padding: 0.8rem;
+	box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	width: 100%;
+	color: white;
+	background-color: black;
+	box-shadow: #ffdfdf;
+	border: none;
+	outline: none;
+}
+
+.search button {
+	cursor: pointer;
+	color: white;
+	padding: 1rem;
+	border: none;
+	background-color: black;
+	box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+}
+
+.search button:hover {
+	background-color: rgb(43, 43, 43);
+}
+
+.content {
+	box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 5rem;
+	width: 30%;
+	background-color: black;
+}
+
+.avatar img {
+	border: 1px solid white;
+	border-radius: 100%;
+	margin-bottom: 0.5rem;
+}
+.names {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.names p {
+	padding: 1rem 0;
+}
+
+.stuffs {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexing {
+	display: flex;
+	gap: 0.2rem;
+	padding-bottom: 1rem;
+}
+
+.content a {
+	padding-top: 1rem;
+	color: #006eff;
+	text-decoration: none;
+}
+
+.rep {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+.rep-1 {
+	width: 100%;
+	margin-top: 2rem;
+	box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+	padding: 1rem;
+	text-align: center;
+	background-color: black;
+}
+
+.rep-1 a {
+	padding-top: 1rem;
+	color: #006eff;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.search {
+		width: 90%;
+	}
+	.content {
+		width: 90%;
+	}
+	.content a {
+		text-align: center;
+	}
+	.rep {
+		width: 90%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.rep-1 {
+		width: 100%;
+	}
+}
